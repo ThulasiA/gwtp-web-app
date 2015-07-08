@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             
+<ui:with field="resources" type="com.axismedtech.interview.client.resources.AppResources"/>
+<ui:with type="com.axismedtech.interview.client.place.NameTokens" field="nameTokens"></ui:with>
+
+<g:HTMLPanel>
+
+    <header>
+      <div>
+     <h1>Thulasi Thirunavukkarasu</h1>
+     <ul>
+       <li> <a href="#{nameTokens.getHome}">Home</a> </li>
+       <li> <a href="#{nameTokens.getRead}">Reading</a> </li>
+       <li> <a href="#{nameTokens.getPhoto}">Photography</a> </li>	          
+     </ul>       
+    </div>
+    </header>
+    
+    <main>
+      <div class="{resources.style.section}">     
+  
+      <div class="{resources.style.row}">
+        
+       
+        <g:Image resource="{resources.logo}" styleName="{resources.style.rowimg}"/>  
+        <h3>Reading</h3>       
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+        </div>
+      </div>
+    </main>
+        
+    
+</g:HTMLPanel>
+
+</ui:UiBinder>
